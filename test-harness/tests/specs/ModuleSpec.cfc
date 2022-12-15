@@ -14,9 +14,14 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="root" {
 	/*********************************** BDD SUITES ***********************************/
 
 	function run(){
-		describe( "MockData CFC", function(){
+		describe( "Ipify", function(){
 			beforeEach( function( currentSpec ){
+				setup();
 			} );
+
+			it( "can get a public ip", function(){
+				expect( getModel( "ipify@ipify" ).get() ).notToBeEmpty();
+			});
 
 		} );
 	}

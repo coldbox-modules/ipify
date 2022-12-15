@@ -6,20 +6,19 @@
 component {
 
 	// Module Properties
-	this.title 				= "@MODULE_NAME@";
+	this.title 				= "ipify";
 	this.author 			= "Ortus Solutions";
 	this.webURL 			= "https://www.ortussolutions.com";
-	this.description 		= "@MODULE_DESCRIPTION@";
+	this.description 		= " A Simple Public IP Address API Module based on www.ipify.org";
 	this.version 			= "@build.version@+@build.number@";
-
 	// Model Namespace
-	this.modelNamespace		= "@MODULE_SLUG@";
-
+	this.modelNamespace		= "ipify";
 	// CF Mapping
-	this.cfmapping			= "@MODULE_SLUG@";
-
+	this.cfmapping			= "ipify";
 	// Dependencies
 	this.dependencies 		= [];
+	// Helpers
+	this.applicationHelper  = [ "helpers/mixins.cfm" ];
 
 	/**
 	 * Configure Module
