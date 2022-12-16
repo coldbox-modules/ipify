@@ -20,7 +20,7 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="root" {
 			} );
 
 			it( "can get a public ip", function(){
-				expect( getModel( "ipify@ipify" ).get() ).notToBeEmpty();
+				expect( getInstance( "ipify@ipify" ).get() ).notToBeEmpty();
 			});
 
 		} );
